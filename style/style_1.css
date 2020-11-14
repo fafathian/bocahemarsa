@@ -1,0 +1,268 @@
+html {
+  scroll-behavior: smooth;
+
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  overflow-x: hidden;
+}
+
+.return-to-top i {
+  color: rgb(121, 121, 121);
+  font-size: 40px;
+}
+
+.return-to-top i:hover {
+  color: orange;
+  font-size: 44px;
+  transition: 0.1s ease;
+  margin-left: -4px;
+  margin-top: -3px;
+  margin-bottom: -19px;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.navbar-brand {
+  color: #ff9800 !important;
+  font-weight: 800;
+}
+
+.nav-link {
+  color: #ff9800 !important;
+  margin-right: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+.navbar-nav .btn {
+  height: 40px;
+}
+
+.jumbotron {
+  background-image: url("../img/cinnamon-4719023_1920.jpg");
+  background-size: cover;
+  height: 400px;
+  margin-top: 0px;
+}
+
+.jumbotron .display-4 {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.jumbotron h4 {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.jumbotron .cari {
+  width: 400px;
+  height: 54px;
+}
+
+.jumbotron .cari-btn {
+  width: 400px;
+  height: 54px;
+}
+
+.trending {
+  justify-content: center;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.trend {
+  border: 1px solid orange;
+  margin: 14px;
+  border-radius: 4px;
+}
+
+.trend:hover {
+  box-shadow: 0px 1px 14px rgb(196, 196, 196);
+  border: 2px solid orange;
+  transition: 0.8s ease;
+  padding-bottom: -30px;
+}
+
+
+.trend img {
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 14px;
+  display: block;
+}
+
+.trend img:hover {
+  transform: scale(1.4);
+  transition: 0.4s ease;
+}
+
+.trend p {
+  text-align: center;
+}
+
+.img-other {
+  width: 400px;
+  height: 240px;
+  margin-bottom: 100px;
+}
+
+.other-recipes {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.img-other img {
+  width: 340px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    margin-right: -24px;
+    text-align: left;
+    color: white !important;
+    padding: 30px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid orange;
+    width: 80%;
+    margin: auto;
+    margin-bottom: -8px;
+  }
+
+  .navbar .nav-link {
+    color: white !important;
+    padding: 40px;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+
+  .navbar-nav .btn {
+    margin-top: 34px;
+    margin-right: 40px;
+    height: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-bottom: -10px;
+  }
+
+  .jumbotron {
+    height: 1000px;
+    margin-top: -140px;
+    text-align: center;
+  }
+
+  .jumbotron .display-4 {
+    padding-top: 280px;
+    font-weight: bold;
+    color: white;
+    font-size: 74px;
+    text-align: center;
+  }
+
+  .jumbotron h4 {
+    color: white;
+    text-align: center;
+  }
+
+  .jumbotron .cari {
+    width: 400px;
+    height: 54px;
+  }
+
+  .jumbotron .cari-btn {
+    width: 100px;
+    height: 54px;
+  }
+
+  .judul {
+    margin-top: 340px;
+    font-weight: 900;
+    color: white;
+  }
+
+  .trending {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .trend img {
+    width: 240px;
+    align-items: center;
+    margin: 40px;
+  }
+
+  .other-recipes {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .img-other {
+    width: 400px;
+    height: 240px;
+  }
+
+  .img-other:hover .yuk-coba {
+    opacity: 1;
+    transition: 0.4s ease;
+  }
+
+  .img-other img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .yuk-coba {
+    opacity: 0;
+    margin-top: -180px;
+    text-align: center;
+  }
+
+
+}
+
+
+#button-up {
+  display: none;
+  background-color: #ff9800;
+  width: 50px;
+  height: 50px;
+  color: white;
+  margin: 4px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+}
+
+#button-up:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button-up:active {
+  background-color: #555;
+}

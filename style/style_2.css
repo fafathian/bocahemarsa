@@ -1,0 +1,124 @@
+.navbar {
+  background-color: orange;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: 800;
+  padding: 0px;
+}
+
+.nav-link {
+  color: white !important;
+  padding: 0px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.resep p {
+  text-align: justify;
+}
+
+.kue-kering {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px;
+  text-align: center;
+}
+
+.cake {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px;
+  text-align: center;
+}
+
+.popular {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px;
+  text-align: center;
+}
+
+.kue-kering-item {
+  margin: 4px;
+}
+
+.cake-item {
+  margin: 4px;
+}
+
+.popular-item {
+  margin: 4px;
+}
+
+.kue-kering-item a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+
+.kue-kering-item a:hover {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: orange;
+  transition: 0.4s ease;
+}
+
+.cake-item a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+
+.cake-item a:hover {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: orange;
+  transition: 0.4s ease;
+}
+
+.popular-item a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: black;
+}
+
+.popular-item a:hover {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: orange;
+  transition: 0.4s ease;
+}
+
+.gambar-item {
+  max-width: 340px;
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+
+  .bahan-bahan .container {
+    width: 834px;
+  }
+
+  .resep p {
+    text-align: left;
+  }
+}

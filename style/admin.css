@@ -1,0 +1,102 @@
+body {
+    overflow-x: hidden;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+}
+
+.nav {
+    background-color: rgb(36, 57, 73) !important;
+    height: 54px;
+}
+
+.upper {
+    color: white;
+    margin-top: -4px;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+.lower {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 4px;
+    margin-right: -24px;
+    margin-left: -24px;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.fa {
+    display: none;
+}
+
+.container {
+    display: block;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+    .nav {
+        background-color: rgb(36, 57, 73) !important;
+        width: 240px;
+        height: 980px;
+        box-shadow: 0px 3px 8px grey;
+        overflow: hidden;
+    }
+
+    .upper {
+        padding-top: 40px;
+        padding-left: 40px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        color: white;
+    }
+
+    .upper::after {
+        content: "";
+        display: block;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        margin-top: 24px;
+        width: 240px;
+        margin-left: -40px;
+    }
+
+    .lower {
+        padding-top: 14px;
+        padding-left: 40px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+    }
+
+    .lower:hover {
+        color: orangered;
+    }
+
+    .crud {
+        margin-top: -940px;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    .crud .container {
+        margin-left: 240px;
+        margin-right: 40px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .fa {
+        display: inline;
+    }
+}
