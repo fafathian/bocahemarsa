@@ -2,7 +2,7 @@
 $connect = mysqli_connect("localhost", "id15394619_bocahemarsa", "Wnh5ap<WdBoXYRkW", "id15394619_rambulantas");  
 session_start();
 if (isset($_SESSION["Username"])) {
-    header("location:logout.php");
+    header("location:data_rambu.php");
 }
 if (isset($_POST["register"])) {
     if (empty($_POST["username"]) || empty($_POST["password"])) {
@@ -29,7 +29,7 @@ if (isset($_POST["login"])) {
             while ($row = mysqli_fetch_array($result)) {
                 if (password_verify($password, $row["password"])) {
                     $_SESSION["username"] = $username;
-                    header("location:logout.php");
+                    header("location:data_rambu.php");
                 } else {
                     echo '<script>alert("Data Yang Anda Masukkan Salah!")</script>';
                 }
