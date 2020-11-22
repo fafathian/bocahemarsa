@@ -4,10 +4,12 @@ $connect = mysqli_connect("localhost", "id15394619_bocahemarsa", "Wnh5ap<WdBoXYR
 $msg = "";
   if (isset($_POST['submit'])) {
   	$image = $_FILES['Gambar']['name'];
-  	$image_text = mysqli_real_escape_string($connect, $_POST['name_text']);
+  	$image_text = mysqli_real_escape_string($connect, $_POST['Nama']);
   	$target = "file/".basename($image);
- 
-  	$sql = "INSERT INTO gambar (name, name_text) VALUES ('$image', '$image_text')";
+    
+    $Nama = mysqli_real_escape_string($connect, $_POST["Nama"]);
+
+  	$sql = "INSERT INTO gambar (name, name_text) VALUES ('$image', '".$_POST['Nama']."')";
   	mysqli_query($connect, $sql);
  
   	if (move_uploaded_file($_FILES['Gambar']['tmp_name'], $target)) {
@@ -67,7 +69,7 @@ $msg = "";
             select image to upload:
                 <div class="form-group d-flex justify-content-center" style="flex-direction: column;">
                     <input type="file" class="form-control mt-2" name="Gambar" placeholder="Gambar" id="Gambar" multiple accept="image/gif, image/jpeg">
-                    <input type="text" class="form-control mt-2" name="Nama" placeholder="Nama Gambar">
+                    <input type="text" class="form-control mt-2" name="Nama" placeholder="Keterangan Gambar">
                     <button type="submit" class="btn btn-primary mt-2" value="Upload Image" name="submit">Tambah</button>
                 </div>
             </form>

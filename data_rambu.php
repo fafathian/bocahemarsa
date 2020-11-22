@@ -2,7 +2,7 @@
 
 include("config.php");
 
-$result = mysqli_query($mysqli, "SELECT * FROM Gambar"); ?>
+$result = mysqli_query($mysqli, "SELECT * FROM gambar"); ?>
 
 <!doctype html>
 <html lang="en">
@@ -29,7 +29,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM Gambar"); ?>
             <a class="lower nav-link" href="data_rambu.php"><i class="fa fa-users" aria-hidden="true"></i> DATA RAMBU</a>
             <a class="lower nav-link" href="login.php"><i class="fa fa-key" aria-hidden="true"></i> LOGOUT</a>
         </nav>
-        
+
     </header>
     <section class="crud">
         <div class="container">
@@ -39,39 +39,43 @@ $result = mysqli_query($mysqli, "SELECT * FROM Gambar"); ?>
                 <thead style="  display:block;
                                 max-height:500px;
                                 overflow-y:auto;">
-                            <tr>
-                                <th>No</th>
-                                <th width='60%'>Gambar</th> 
-                            </tr>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th width="50%">Gambar</th>
+                        <th width="30%">Keterangan Gambar</th>
+                        <th width="20%">Aksi</th>
+                    </tr>
                 </thead>
                 <tbody style="  display:block;
                                 max-height:500px;
                                 overflow-y:auto;">
-                            <?php $i = 1; ?>
-                            <?php
-                            // include database
-                            include 'config.php';
-                            // perintah sql untuk menampilkan daftar bank yang berelasi dengan tabel kategori bank
-                            $sql="select * from gambar order by Id_gambar desc";
-                            $hasil=mysqli_query($mysqli,$sql);
-                            $no=0;
-                            //Menampilkan data dengan perulangan while
-                            while ($data = mysqli_fetch_array($hasil)):
-                            $no++;
-                        ?>
+                    <?php $i = 0; ?>
+                    <?php
+                    // include database
+                    include 'config.php';
+                    // perintah sql untuk menampilkan daftar bank yang berelasi dengan tabel kategori bank
+                    $sql = "select * from gambar order by Id_gambar desc";
+                    $hasil = mysqli_query($mysqli, $sql);
+                    $no = 0;
+                    //Menampilkan data dengan perulangan while
+                    while ($data = mysqli_fetch_array($hasil)) :
+                        $i++;
+                    ?>
                         <tr>
-                            <td><?php echo $no; ?></td>
-                            <td><img src="file/<?php echo $data['name'];?>" class="rounded" width='30%' alt="Cinque Terre"></td>
-                            
+                            <td ><?= $i; ?></td>
+                            <td width="40%" ><img src="file/<?php echo $data['name']; ?>" class="rounded" width='60%%' alt="Cinque Terre"></td>
+                            <td style="width: 440px;"><?= nl2br($data["name_text"]); ?></td>
+                            <td><a href="edit.php?Id_gambar=<?= $data["Id_gambar"]; ?>" class='btn btn-warning'>Edit</a>
+                                <a href="delete.php?Id_gambar=<?= $data["Id_Gambar"]; ?>" class="btn btn-danger" onclick="return alert('Are you sure you want to delete?')">Delete</a>
                         </tr>
                         <!-- bagian akhir (penutup) while -->
-                        <?php endwhile; ?>
+                    <?php endwhile; ?>
                 </tbody>
             </table>
         </div>
     </section>
 
-    
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
