@@ -1,0 +1,94 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(92, 0, 128);
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 300px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: auto;
+    background-image: url('../assets/banner.png');
+    background-position: center;
+    background-size: 480px;
+    background-repeat: no-repeat;
+    border-right: 1px solid rgb(204, 204, 204);
+}
+
+.upper-sidebar {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo {
+    width: 130px !important;
+}
+
+.judul{
+    position: fixed;
+    top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navigation{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.content {
+    margin-left: 330px;
+    padding: 30px 30px;
+}
+
+.rambu {
+    width: 400px;
+}
+
+.keterangan {
+    width: 70%;
+    height: 150px !important; 
+    bottom: 10px;
+    border-radius: 30px;
+    position: fixed;
+    background-color: rgb(255, 251, 227);
+    padding: 30px;
+}
+
+.keterangan-isi{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+/* Utils */
+.spacer {
+    height: 10px;
+}

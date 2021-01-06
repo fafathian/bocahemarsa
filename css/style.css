@@ -1,0 +1,119 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .content {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 400vw;
+    }
+
+    .satu {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dua {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tiga {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-link {
+        color: #09122c !important;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0px 50px;
+    }
+
+    .nav-link:hover {
+        color: #2d3b68 !important;
+    }
+
+    .pengenalan {
+        display: flex;
+        flex-direction: row;
+        margin: 0px 20px;
+    }
+
+    .pengenalan .img-1 {
+        width: 700px;
+    }
+
+    .pengenalan .img-2 {
+        width: 800px;
+    }
+
+    .pengenalan .img-3 {
+        width: 700px;
+    }
+
+    .slogan-pengenalan h1 {
+        font-size: 60px;
+        color: #18254f;
+        font-weight: 700;
+    }
+
+    .slogan-pengenalan h6 {
+        font-size: 20px;
+        margin: 20px 0px;
+        color: #18254f;
+    }
+
+    .slogan-pengenalan h1 span {
+        font-weight: 900;
+    }
+
+    /* Utils */
+    button {
+        margin: 20px 0px;
+        padding: 25px 70px;
+        border: none;
+        border-radius: 10px;
+        background-color: #fcc206;
+        color: white;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    button:hover {
+        border: none;
+        border-radius: 10px;
+    }
+
+    button::active {
+        border: none;
+        border-radius: 10px;
+    }
+}
