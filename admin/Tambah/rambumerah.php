@@ -90,10 +90,10 @@ $result = mysqli_query($connect, "SELECT * FROM RambuMerah");
                             </div>
                             <div id="collapseOne" class="collapse show">
                                 <div class="card-body">
-                                    <a href="rambubiru.php">Rambu Biru</a>
+                                    <a href="rambubiru.php">Rambu Perintah</a>
                                 </div>
                                 <div class="card-body">
-                                    <a href="rambumerah.php">Rambu Merah</a>
+                                    <a href="rambumerah.php">Rambu Larangan</a>
                                 </div>
                             </div>
                         </div>
@@ -110,10 +110,10 @@ $result = mysqli_query($connect, "SELECT * FROM RambuMerah");
                             </div>
                             <div id="collapseTwo" class="collapse show">
                                 <div class="card-body">
-                                    <a href="../Data/databiru.php">Data Rambu Biru</a>
+                                    <a href="../Data/databiru.php">Data Rambu Perintah</a>
                                 </div>
                                 <div class="card-body">
-                                    <a href="../Data/datamerah.php">Data Rambu Merah</a>
+                                    <a href="../Data/datamerah.php">Data Rambu Larangan</a>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +134,7 @@ $result = mysqli_query($connect, "SELECT * FROM RambuMerah");
         </div>
         <section class="content">
             <div class="kumpulan-rambu">
-                <h2 class="mb-4 mt-4">TAMBAH GAMBAR RAMBU BERWARNA MERAH</h2>
+                <h2 class="mb-4 mt-4">TAMBAH GAMBAR RAMBU LARANGAN</h2>
                 <form action="" method="post" enctype="multipart/form-data">
                     select image to upload:
                     <div class="form-group d-flex justify-content-center" style="flex-direction: column;">

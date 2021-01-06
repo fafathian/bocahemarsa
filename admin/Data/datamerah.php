@@ -58,10 +58,10 @@ $result = mysqli_query($mysqli, "SELECT * FROM RambuKuning"); ?>
                             </div>
                             <div id="collapseOne" class="collapse show">
                                 <div class="card-body">
-                                    <a href="../Tambah/rambubiru.php">Rambu Biru</a>
+                                    <a href="../Tambah/rambubiru.php">Rambu Perintah</a>
                                 </div>
                                 <div class="card-body">
-                                    <a href="../Tambah/rambumerah.php">Rambu Merah</a>
+                                    <a href="../Tambah/rambumerah.php">Rambu Larangan</a>
                                 </div>
                             </div>
                         </div>
@@ -78,10 +78,10 @@ $result = mysqli_query($mysqli, "SELECT * FROM RambuKuning"); ?>
                             </div>
                             <div id="collapseTwo" class="collapse show">
                                 <div class="card-body">
-                                    <a href="databiru.php">Data Rambu Biru</a>
+                                    <a href="databiru.php">Data Rambu Perintah</a>
                                 </div>
                                 <div class="card-body">
-                                    <a href="datamerah.php">Data Rambu Merah</a>
+                                    <a href="datamerah.php">Data Rambu Larangan</a>
                                 </div>
                             </div>
                         </div>
