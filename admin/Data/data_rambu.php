@@ -86,7 +86,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM gambar"); ?>
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h2 class="mb-0">
-                                    <a button class="btn text-left" type="button" href="../../index.html">
+                                    <a button class="btn text-left" type="button" href="../../Home.html">
                                         Logout
                                     </a>
                                 </h2>
